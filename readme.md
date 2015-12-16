@@ -29,3 +29,7 @@
     2   ConSeq: Detecting Concurrency Bugs through Sequential Errors(ASPLOS’11)：bug detectiion的一种方法。
     3   A Case for an Interleaving Constrained Shared-Memory Multi-Processor(ISCA’09):提出一种限制策略来减少concurrency bugs.
     4   Efficient Concurrency-Bug Detection Across Inputs(OOPSLA ’13):we use open-source software to study how existing concurrency-bug detection tools work for a set of inputs.
+
+###夏亦谦
+    1   Colorama: Architectural Support for Data-Centric Synchronization. 一个简化编写并行程序的复杂度的系统。能帮我们debug传统的大部分代码，但是需要一些硬件支持，有较少的开销。
+    2   Autolocker: Synchronization Inference for Atomic Sections. 提出了一种不太牺牲性能或者兼容性的类“transactional memory”的方法，用了一种基于锁的方法，适合多核处理器架构。
