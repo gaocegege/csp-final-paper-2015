@@ -11,6 +11,7 @@
 		b	Automated concurrency0bug fixing OSDI 2012
 		c	SKI: exposing kernel concurrency bugs through systematic schedule exploration, OSDI 2014  找到的是kernel中的concurrency bug
 
+
 ## 目录结构
 
 	paper/                    论文目录
@@ -19,3 +20,12 @@
 		who-references-MUVI/  引用MUVI的论文
 	style-guide/              格式参考，内含ROP讲课的学长刘宇涛的paper
 	readme.md                 readme
+
+##论文查找
+
+###李菁菁 
+
+    1   Learning from Mistakes（ASPLOS'08）— A Comprehensive Study on Real World Concurrency Bug Characteristics：对现实世界中concurrency bug特性的全面研究。
+    2   ConSeq: Detecting Concurrency Bugs through Sequential Errors(ASPLOS’11)：bug detectiion的一种方法。
+    3   A Case for an Interleaving Constrained Shared-Memory Multi-Processor(ISCA’09):提出一种限制策略来减少concurrency bugs.
+    4   Efficient Concurrency-Bug Detection Across Inputs(OOPSLA ’13):we use open-source software to study how existing concurrency-bug detection tools work for a set of inputs.
