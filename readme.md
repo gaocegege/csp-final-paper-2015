@@ -13,3 +13,7 @@
 
 ## 目录结构
 
+	paper/                    论文目录
+		relevant/             相关论文
+		referenced-by-MUVI/   被MUVI引用的论文
+		who-references-MUVI/  引用MUVI的论文 
