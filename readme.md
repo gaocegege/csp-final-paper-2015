@@ -33,3 +33,13 @@
 ###夏亦谦
     1   Colorama: Architectural Support for Data-Centric Synchronization. 一个简化编写并行程序的复杂度的系统。能帮我们debug传统的大部分代码，但是需要一些硬件支持，有较少的开销。
     2   Autolocker: Synchronization Inference for Atomic Sections. 提出了一种不太牺牲性能或者兼容性的类“transactional memory”的方法，用了一种基于锁的方法，适合多核处理器架构。
+    
+
+## 任务分配
+
+Paper  | Assigned to
+------------- | -------------
+MUVI(SOSP‘07)  | 
+ConSeq: Detecting Concurrency Bugs through Sequential Errors(ASPLOS’11)  | 
+Efficient Concurrency-Bug Detection Across Inputs(OOPSLA’13)  | 
+Goldilocks: a race and transaction-aware java runtime(ACM SIGPLAN Notices '07)  |     
