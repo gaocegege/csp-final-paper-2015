@@ -16,4 +16,6 @@
 	paper/                    论文目录
 		relevant/             相关论文
 		referenced-by-MUVI/   被MUVI引用的论文
-		who-references-MUVI/  引用MUVI的论文 
+		who-references-MUVI/  引用MUVI的论文
+	style-guide/              格式参考，内含ROP讲课的学长刘宇涛的paper
+	readme.md                 readme
