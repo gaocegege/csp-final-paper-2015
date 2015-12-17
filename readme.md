@@ -37,9 +37,9 @@
 
 ## 任务分配
 
-Paper  | Assigned to
-------------- | -------------
-MUVI(SOSP‘07)  | 夏亦谦
-ConSeq: Detecting Concurrency Bugs through Sequential Errors(ASPLOS’11)  | 刘宁、夏亦谦
-Efficient Concurrency-Bug Detection Across Inputs(OOPSLA’13)  | 刘宁
-Goldilocks: a race and transaction-aware java runtime(ACM SIGPLAN Notices '07)  |     
+Paper                                                                           | Assigned to
+-------------                                                                   | -------------
+MUVI(SOSP‘07)                                                                   | 夏亦谦、高策
+ConSeq: Detecting Concurrency Bugs through Sequential Errors(ASPLOS’11)         | 刘宁、夏亦谦
+Efficient Concurrency-Bug Detection Across Inputs(OOPSLA’13)                    | 刘宁
+Goldilocks: a race and transaction-aware java runtime(ACM SIGPLAN Notices '07)  | 高策
