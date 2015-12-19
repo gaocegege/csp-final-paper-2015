@@ -45,3 +45,6 @@ MUVI(SOSP‘07)                                                                 
 ConSeq: Detecting Concurrency Bugs through Sequential Errors(ASPLOS’11)         | 刘宁、夏亦谦
 Efficient Concurrency-Bug Detection Across Inputs(OOPSLA’13)                    | 刘宁、张坚鑫
 Goldilocks: a race and transaction-aware java runtime(PLDI '07)  | 高策、李菁菁
+
+## 其他资料
+* 作者Lu Shan的论文列表](http://dblp.uni-trier.de/pers/hd/l/Lu:Shan):列出了很多关于concurrency bug detection的文章，可以参考。
