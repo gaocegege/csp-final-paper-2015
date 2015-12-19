@@ -19,6 +19,7 @@
 		referenced-by-MUVI/   被MUVI引用的论文
 		who-references-MUVI/  引用MUVI的论文
 	style-guide/              格式参考，内含ROP讲课的学长刘宇涛的paper
+	paper-summary/            论文总结
 	readme.md                 readme
 
 ##论文查找
@@ -33,7 +34,7 @@
 ###夏亦谦
     1   Colorama: Architectural Support for Data-Centric Synchronization. 一个简化编写并行程序的复杂度的系统。能帮我们debug传统的大部分代码，但是需要一些硬件支持，有较少的开销。
     2   Autolocker: Synchronization Inference for Atomic Sections. 提出了一种不太牺牲性能或者兼容性的类“transactional memory”的方法，用了一种基于锁的方法，适合多核处理器架构。
-    
+    3   AVIO: Detecting Atomicity Violations via Access-Interleaving Invariants. 提出了一种检测atomicity violation bugs的方法。
 
 ## 任务分配
 
@@ -42,4 +43,7 @@ Paper                                                                           
 MUVI(SOSP‘07)                                                                   | 夏亦谦、高策、张坚鑫、李菁菁
 ConSeq: Detecting Concurrency Bugs through Sequential Errors(ASPLOS’11)         | 刘宁、夏亦谦
 Efficient Concurrency-Bug Detection Across Inputs(OOPSLA’13)                    | 刘宁、张坚鑫
-Goldilocks: a race and transaction-aware java runtime(ACM SIGPLAN Notices '07)  | 高策、李菁菁
+Goldilocks: a race and transaction-aware java runtime(PLDI '07)  | 高策、李菁菁
+
+## 其他资料
+* [作者Lu Shan的论文列表](http://dblp.uni-trier.de/pers/hd/l/Lu:Shan):列出了很多关于concurrency bug detection的文章，可以参考。
