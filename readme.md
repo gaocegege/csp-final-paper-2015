@@ -33,7 +33,8 @@
 ###夏亦谦
     1   Colorama: Architectural Support for Data-Centric Synchronization. 一个简化编写并行程序的复杂度的系统。能帮我们debug传统的大部分代码，但是需要一些硬件支持，有较少的开销。
     2   Autolocker: Synchronization Inference for Atomic Sections. 提出了一种不太牺牲性能或者兼容性的类“transactional memory”的方法，用了一种基于锁的方法，适合多核处理器架构。
-    
+    3   AVIO: Detecting Atomicity Violations via Access-Interleaving Invariants. 提出了一种检测atomicity violation bugs的方法。
+    4   [MUVI作者Lu Shan的论文列表](http://dblp.uni-trier.de/pers/hd/l/Lu:Shan):列出了很多关于concurrency bug detection的文章，可以参考。 
 
 ## 任务分配
 
