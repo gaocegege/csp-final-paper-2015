@@ -29,6 +29,15 @@
     2   ConSeq: Detecting Concurrency Bugs through Sequential Errors(ASPLOS’11)：bug detectiion的一种方法。
     3   A Case for an Interleaving Constrained Shared-Memory Multi-Processor(ISCA’09):提出一种限制策略来减少concurrency bugs.
     4   Efficient Concurrency-Bug Detection Across Inputs(OOPSLA ’13):we use open-source software to study how existing concurrency-bug detection tools work for a set of inputs.
+- - -
+####文章放在了relevant文件夹下
+
+    5   Non-Race Concurrency Bug Detection Through Order-Sensitive Critical Sections(ISCA'13):运行时bug detectio,针对non-race concurrency bugs.
+    6   Detecting Concurrency Bugs from the Perspectives of Synchronization Intentions(TPDS'11): 同样为Currency Bug Detection.AVIO+MUVI.感觉这篇文章下阶段最值得读。
+    7   ConMem(ASPLOS’10):针对并发错误中导致程序crash的detector.
+    8   Static Data Race Detection for Cocurrent Programs with Asynchronous Calls(ESEC-FSE'09):多线程（以C语言为例）中函数异步调用时static data race detection technique.
+    9  Bug Characteristics in open source software: 开源软件的bug特征。
+    10  Finding Complex Concurrency Bugs in Large Multi-Threaded Application(EuroSys'11)：一种在程序执行时找到触发并发错误的detector。
 
 ###夏亦谦
     1   Colorama: Architectural Support for Data-Centric Synchronization. 一个简化编写并行程序的复杂度的系统。能帮我们debug传统的大部分代码，但是需要一些硬件支持，有较少的开销。
