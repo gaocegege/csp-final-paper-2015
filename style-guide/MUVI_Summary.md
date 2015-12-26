@@ -39,9 +39,19 @@
 
 Access Correlation通过以下的步骤进行推断:
 
-1. Acess信息收集(Access information collection)
-2. Access pattern分析
-3. Correlation的生成,筛选,排序
+1. Acess信息收集(Access information collection)，具体步骤：
+通过解析源代码来收集每个函数的变量访问信息, 包括变量被访问的集合,被访问类型以及在代码中出现的位置,这些信息被存放 在 Acc_Set 数据库中。MUVI 只考虑全局变量和结构体,通过访问类型(读或写)来对不同关联类型进行分类,通过在源代码中出现的位置(文件名和在代码中出 现的行数)来判断两次访问的同时性,访问来自函数本身还是它调用的函数为之 后的相关性关系修剪做支持。
+2. 访问模式(Access Pattern)分析，具体步骤：
+通过频繁集挖掘技术 FPclose 处理 Acc_Set 数据库中的 数据,找到频繁同时出现的变量集,将这些结果作为相关性变量候选集。在频繁 集挖据技术中,将一组集合作为输入,找到出现频率大于 MInSupport 阈值的子 集。
+3. Correlation的生成,筛选,排序，具体步骤：
+利用 Acc_Set 数据中的详细信息,产生和修 剪相关性集合,并对不同类型的相关性进行排名。
+
+有以下四种情况关联关系会被去除
+	
+	1. 如果一种关系(C)在函数(supporter) 中出现的次数不少于 MInSupport,定义为 support(C),但是满足这种关系的函 数小于 support 阈值;
+	2. 如果 support(C)/support(A1(x))<MInConfidence 阈值; 
+	3. 直接 supporter 的数量小于 MinDirectSupport 阈值;
+	4. 一些常见的变量 stdout 和 stderr 等产生的关联性。
 
 分析:
 
@@ -89,7 +99,7 @@ Access Correlation通过以下的步骤进行推断:
 		2.无害的多变量竞争（只有在特殊的情况下才会有竞争）
 3. 存在漏报,原因是
 
-		有些相关性只有在特定的程序上下文才能得出，而MUVI无法检测
+		有些相关性只有在特定的程序上下文才能得出，而MUVI无法检测	
 		
 ##性能
 
