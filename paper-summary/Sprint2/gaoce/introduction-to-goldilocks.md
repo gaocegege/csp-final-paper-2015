@@ -36,22 +36,6 @@ Goldilocks提出了一种形式化的描述方法，来对读写、加锁释放�
 
 在这样的抽象下，使得Goldilocks对于事务，以及原子变量等等其他的同步操作有更好的支持。
 
-### 例证
-
-<figure>
-	<img src="./images/gaoce-3.png" alt="示例代码" weight="300">
-	<figcaption>Example Code</figcaption>
-</figure>
-
-对于示例中的代码，线程1中的代码先执行，之后再执行线程2中的代码，最后运行线程3。Goldilocks算法在其上的运行情况如图所示：
-
-<figure>
-	<img src="./images/gaoce-4.png" alt="更新规则" weight="300">
-	<figcaption>更新规则</figcaption>
-</figure>
-
-在Goldilocks的运行情况中可以得出，在这样的执行顺序中，不会出现数据竞争的情况。
-
 ### 不同实现方式的比较
 
 因为Goldilocks是基于Lockset的，所以也是一种动态的检测方法。Goldilocks会监控Java字节码的运行，在这样的等级上，每一次变量的读写访问，或者是同步操作的指令，都是一条字节码的指令。同时每一个字节码的指令都会对应一个变量或者源码中的一行。
